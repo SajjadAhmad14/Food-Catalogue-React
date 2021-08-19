@@ -1,0 +1,28 @@
+:root {
+  --white: #fff;
+}
+@font-face {
+  font-family: "Poppins";
+  src:
+    local("PoppinsRegular"),
+    url("./fonts/Poppins-Regular.ttf") format("truetype");
+  font-weight: 400;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 10px 0 10px;
+  font-family: "PoppinsRegular", sans-serif;
+  font-size: 18px;
+  color: var(--white);
+}
+
+.nav-items {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-item {
+  margin-right: 20px;
+}
