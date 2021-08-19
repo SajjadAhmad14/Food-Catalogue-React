@@ -16,6 +16,12 @@
   font-family: "PoppinsRegular", sans-serif;
   font-size: 18px;
   color: var(--white);
+  margin-top: 20px;
+}
+
+.navigation a {
+  color: var(--white);
+  text-decoration: none;
 }
 
 .nav-items {
@@ -25,4 +31,13 @@
 
 .nav-item {
   margin-right: 20px;
+}
+
+.intro {
+  background-image: url("./images/intro-pic.jpeg");
+  background-repeat: no-repeat;
+  background-position: 50% 80%;
+  background-size: cover;
+  height: 400px;
+  margin-top: -41px;
 }
