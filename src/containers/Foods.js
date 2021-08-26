@@ -1,13 +1,12 @@
-import PropTypes from 'prop-types';
 import allActions from '../store/actions/index';
 import { useSelector, useDispatch } from "react-redux";
 import { useEffect } from 'react';
 import axios from "axios";
+import FoodItem from '../components/FoodItem';
 
-const Foods = ({value}) => {
+const Foods = () => {
   const foods = useSelector(state => state.foodReducer.foods);
   const foodList = foods
-  const food = value
   const dispatch = useDispatch();
   function getData() {
     return dispatch => {
@@ -21,21 +20,13 @@ const Foods = ({value}) => {
     dispatch(getData());
   }, []);
   return (
-    <div>
+    <div className="card-grid">
       {foodList.map((item) => (
-        <div>{item.strMeal}<img src={item.strMealThumb} alt="food"/></div>
+        <FoodItem avatar={item.strMealThumb}/>
       ))}
     </div>
 
   )
 }
-
-Foods.propTypes = {
-  value: PropTypes.string,
-}
-
-Foods.defaultProps = {
-  value: 'Seafood',
-};
 
 export default Foods;

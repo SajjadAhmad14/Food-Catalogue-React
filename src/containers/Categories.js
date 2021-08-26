@@ -7,7 +7,6 @@ import Foods from './Foods';
 const Categories = () => {
   const categories = useSelector(state => state.categoryReducer.categories);
   const categoryList = categories;
-  const[category, setCategory] = useState('Seafood');
   const dispatch = useDispatch();
   function getData() {
     return dispatch => {
@@ -18,9 +17,6 @@ const Categories = () => {
     };
   }
 
-  const handleCategory = (e) => {
-    setCategory(e.target.value);
-  }
   useEffect(() => {
     dispatch(getData());
   }, []);
@@ -28,14 +24,14 @@ const Categories = () => {
     <div className="intro">
       <div className="logo"></div>
       <h2>Discover the best food & drinks!</h2>
-      <select className="categroes" onChange={handleCategory}>
+      <select className="categroes">
         {categoryList.map((item) => (
           <option value={item.strCategory} key={item.strCategory}>{item.strCategory}</option>
         ))}
       </select>
       <input type="text" className="search" placeholder="Search for a dish" />
       <div className="foods">
-        <Foods value={category}/>
+        {/* <Foods value={category}/> */}
       </div>
     </div>
   )

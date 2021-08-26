@@ -81,3 +81,8 @@
 .foods {
   margin-top: 200px;
 }
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
