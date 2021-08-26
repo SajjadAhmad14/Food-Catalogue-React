@@ -1,6 +1,6 @@
 import Nav from './components/Nav';
-// import IntroSection from './components/IntroSection';
 import Categories from './containers/Categories';
+import Foods from './containers/Foods';
 import './App.css';
 
 function App() {
@@ -8,6 +8,7 @@ function App() {
     <div className="App">
       <Nav />
       <Categories />
+      <Foods />
     </div>
   );
 }
