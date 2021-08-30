@@ -1,12 +1,9 @@
-import { useDispatch, useSelector } from "react-redux";
-import React, { useEffect, useState } from 'react';
+import { useDispatch } from "react-redux";
+import React, { useEffect } from 'react';
 import axios from "axios";
 import allActions from '../store/actions/index';
-import Foods from './Foods';
 
 const Categories = () => {
-  const categories = useSelector(state => state.categoryReducer.categories);
-  const categoryList = categories;
   const dispatch = useDispatch();
   function getData() {
     return dispatch => {
@@ -24,14 +21,8 @@ const Categories = () => {
     <div className="intro">
       <div className="logo"></div>
       <h2>Discover the best food & drinks!</h2>
-      <select className="categroes">
-        {categoryList.map((item) => (
-          <option value={item.strCategory} key={item.strCategory}>{item.strCategory}</option>
-        ))}
-      </select>
       <input type="text" className="search" placeholder="Search for a dish" />
       <div className="foods">
-        {/* <Foods value={category}/> */}
       </div>
     </div>
   )

@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { useState } from 'react'
 import { makeStyles } from '@material-ui/core/styles';
 import clsx from 'clsx';
@@ -40,7 +41,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const FoodItem = (value) => {
+const FoodItem = ({food}) => {
   const classes = useStyles();
   const [expanded, setExpanded] = useState(false);
 
@@ -66,7 +67,7 @@ const FoodItem = (value) => {
         />
         <CardMedia
           className={classes.media}
-          image={value.avatar}
+          // image={food.strMealThumb}
           title="Paella dish"
         />
         <CardContent>
@@ -125,3 +126,7 @@ const FoodItem = (value) => {
 }
 
 export default FoodItem;
+
+FoodItem.propType = {
+  food: PropTypes.object,
+}

@@ -44,7 +44,7 @@
   background-repeat: no-repeat;
   background-position: 50% 80%;
   background-size: cover;
-  height: 400px;
+  height: 500px;
   margin-top: -41px;
   text-align: center;
 }
@@ -68,7 +68,10 @@
 }
 
 .categroes {
-  wodth: 10%;
+  position: absolute;
+  top: 40%;
+  right: 25%;
+  width: 50%;
   height: 40px;
   border-radius: 7px;
   border: none;
