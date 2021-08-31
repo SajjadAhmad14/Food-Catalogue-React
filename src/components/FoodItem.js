@@ -44,7 +44,7 @@ const useStyles = makeStyles((theme) => ({
 const FoodItem = ({food}) => {
   const classes = useStyles();
   const [expanded, setExpanded] = useState(false);
-
+  const item = {...food}
   const handleExpandClick = () => {
     setExpanded(!expanded);
   };
@@ -62,18 +62,17 @@ const FoodItem = ({food}) => {
               <MoreVertIcon />
             </IconButton>
           }
-          title="Shrimp and Chorizo Paella"
+          title={item.strMeal}
           subheader="September 14, 2016"
         />
         <CardMedia
           className={classes.media}
-          // image={food.strMealThumb}
+          image={item.strMealThumb}
           title="Paella dish"
         />
         <CardContent>
           <Typography variant="body2" color="textSecondary" component="p">
-            This impressive paella is a perfect party dish and a fun meal to cook together with your
-            guests. Add 1 cup of frozen peas along with the mussels, if you like.
+            {item.strCategoryDescription}
           </Typography>
         </CardContent>
         <CardActions disableSpacing>

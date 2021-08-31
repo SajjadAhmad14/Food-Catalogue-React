@@ -5,7 +5,7 @@ import allActions from '../store/actions/index';
 
 const Categories = () => {
   const dispatch = useDispatch();
-  function getData() {
+  const getData = () => {
     return dispatch => {
       axios.get("https://www.themealdb.com/api/json/v1/1/categories.php")
         .then(res =>

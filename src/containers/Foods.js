@@ -10,28 +10,27 @@ const Foods = ({ food }) => {
   const categoryList = categories;
   const foods = useSelector(state => state.foodReducer.foods);
   const foodList = foods;
-  console.log(foodList);
   const dispatch = useDispatch();
+
+  const categoryHanle = (e) => {
+    const value = e.target.value;
+    setCategory(value);
+  }
+
   const fetchFoods = () => {
     axios.get(`https://www.themealdb.com/api/json/v1/1/filter.php?c=${category}`)
       .then(res =>
         dispatch(allActions.foodActions(res.data.meals))
       );
   }
-
-  const categoryHanle = (e) => {
-    const value = e.target.value;
-    setCategory(value);
-    fetchFoods();
-  }
-
+  
   useEffect(() => {
     fetchFoods();
-  }, []);
- 
+  }, [category]);
+
   return (
     <div>
-      <select className="categroes" onChange={categoryHanle}>
+      <select className="categroes" onChange={(e) => { categoryHanle(e); }}>
         {categoryList.map((item) => (
           <option value={item.strCategory} key={item.strCategory}>{item.strCategory}</option>
         ))}
