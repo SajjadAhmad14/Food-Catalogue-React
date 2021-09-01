@@ -21,7 +21,7 @@ const Categories = () => {
     <div className="intro">
       <div className="logo"></div>
       <h2>Discover the best food & drinks!</h2>
-      <input type="text" className="search" placeholder="Search for a dish" />
+      {/* <input type="text" className="search" placeholder="Search for a dish" /> */}
       <div className="foods">
       </div>
     </div>
