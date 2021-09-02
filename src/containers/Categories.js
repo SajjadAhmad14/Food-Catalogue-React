@@ -16,7 +16,7 @@ const Categories = () => {
 
   useEffect(() => {
     dispatch(getData());
-  }, []);
+  });
   return (
     <div className="intro">
       <div className="logo"></div>
