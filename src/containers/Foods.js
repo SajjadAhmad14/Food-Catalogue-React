@@ -23,9 +23,10 @@ const Foods = ({ food }) => {
         dispatch(allActions.foodActions(res.data.meals))
       );
   }
-  
+
   useEffect(() => {
-    fetchFoods();
+    fetchFoods()
+      // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [category]);
 
   return (
