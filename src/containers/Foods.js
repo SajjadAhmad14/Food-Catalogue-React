@@ -26,6 +26,7 @@ const Foods = ({ food }) => {
 
   useEffect(() => {
     fetchFoods()
+    
       // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [category]);
 
