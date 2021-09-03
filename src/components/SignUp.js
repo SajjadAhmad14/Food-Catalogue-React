@@ -22,9 +22,10 @@ function Copyright() {
       {'Copyright © '}
       <Link color="inherit" href="https://material-ui.com/">
         Foodie
-      </Link>{' '}
+      </Link>
+      {' '}
       {new Date().getFullYear()}
-      {'.'}
+      .
     </Typography>
   );
 }
@@ -140,6 +141,6 @@ const SignUp = () => {
       </Box>
     </Container>
   );
-}
+};
 
 export default SignUp;

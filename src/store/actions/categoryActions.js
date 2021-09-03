@@ -1,7 +1,5 @@
-const addCategories = (categories) => {
-  return {
-    type: 'ADD_CATEGORIES', categories,
-  }
-}
+const addCategories = (categories) => ({
+  type: 'ADD_CATEGORIES', categories,
+});
 
-export default addCategories
+export default addCategories;

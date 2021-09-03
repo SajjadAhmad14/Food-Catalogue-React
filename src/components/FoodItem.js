@@ -1,6 +1,5 @@
-import React from 'react';
+import React, { useState } from 'react';
 import PropTypes from 'prop-types';
-import { useState } from 'react'
 import { makeStyles } from '@material-ui/core/styles';
 import clsx from 'clsx';
 import Card from '@material-ui/core/Card';
@@ -41,66 +40,65 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const FoodItem = ({food}) => {
+const FoodItem = ({ food }) => {
   const classes = useStyles();
   const [expanded, setExpanded] = useState(false);
-  const item = {...food}
+  const item = { ...food };
   const handleExpandClick = () => {
     setExpanded(!expanded);
   };
 
   return (
-      <Card className={classes.root}>
-        <CardHeader
-          avatar={
-            <Avatar aria-label="recipe" className={classes.avatar}>
-              R
-            </Avatar>
-          }
-          action={
-            <IconButton aria-label="settings">
-              <MoreVertIcon />
-            </IconButton>
-          }
-          title={item.strMeal}
-          subheader="September 14, 2016"
-        />
-        <CardMedia
-          className={classes.media}
-          image={item.strMealThumb}
-          title="Paella dish"
-        />
-        <CardContent>
-          <Typography variant="body2" color="textSecondary" component="p">
-            {item.strCategoryDescription}
-          </Typography>
-        </CardContent>
-        <CardActions disableSpacing>
-          <IconButton aria-label="add to favorites">
-            <FavoriteIcon />
+    <Card className={classes.root}>
+      <CardHeader
+        avatar={(
+          <Avatar aria-label="recipe" className={classes.avatar}>
+            R
+          </Avatar>
+          )}
+        action={(
+          <IconButton aria-label="settings">
+            <MoreVertIcon />
           </IconButton>
-          <IconButton aria-label="share">
-            <ShareIcon />
-          </IconButton>
-          <IconButton
-            className={clsx(classes.expand, {
-              [classes.expandOpen]: expanded,
-            })}
-            onClick={handleExpandClick}
-            aria-expanded={expanded}
-            aria-label="show more"
-          >
-            <ExpandMoreIcon />
-          </IconButton>
-        </CardActions>
-        <Collapse in={expanded} timeout="auto" unmountOnExit>
-        </Collapse>
-      </Card>
+          )}
+        title={item.strMeal}
+        subheader="September 14, 2016"
+      />
+      <CardMedia
+        className={classes.media}
+        image={item.strMealThumb}
+        title="Paella dish"
+      />
+      <CardContent>
+        <Typography variant="body2" color="textSecondary" component="p">
+          {item.strCategoryDescription}
+        </Typography>
+      </CardContent>
+      <CardActions disableSpacing>
+        <IconButton aria-label="add to favorites">
+          <FavoriteIcon />
+        </IconButton>
+        <IconButton aria-label="share">
+          <ShareIcon />
+        </IconButton>
+        <IconButton
+          className={clsx(classes.expand, {
+            [classes.expandOpen]: expanded,
+          })}
+          onClick={handleExpandClick}
+          aria-expanded={expanded}
+          aria-label="show more"
+        >
+          <ExpandMoreIcon />
+        </IconButton>
+      </CardActions>
+      <Collapse in={expanded} timeout="auto" unmountOnExit />
+    </Card>
   );
-}
+};
 
 export default FoodItem;
 
-FoodItem.propType = {
-  food: PropTypes.object,
-}
+FoodItem.propTypes = {
+  food: PropTypes.objectOf.isRequired,
+};

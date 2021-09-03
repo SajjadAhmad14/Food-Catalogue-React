@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-# Bookstore App
-=======
 # Foodie
->>>>>>> 1d5a3cbdaa5a04278eba97c211cf3a73d566c64b
 
 > This is a Food search app built using React+Redux and [this](https://www.themealdb.com/api.php) API.
  

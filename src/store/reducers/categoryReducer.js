@@ -7,11 +7,11 @@ const categoryReducer = (state = initialState, action) => {
     case 'ADD_CATEGORIES':
       return {
         ...state,
-        categories: action.categories
-      }
+        categories: action.categories,
+      };
     default:
       return state;
   }
-}
+};
 
 export default categoryReducer;
