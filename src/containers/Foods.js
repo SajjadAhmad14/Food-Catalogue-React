@@ -25,9 +25,14 @@ const Foods = ({ food }) => {
   }
 
   useEffect(() => {
+<<<<<<< HEAD
     fetchFoods()
     
       // eslint-disable-next-line react-hooks/exhaustive-deps
+=======
+    fetchFoods();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+>>>>>>> 1d5a3cbdaa5a04278eba97c211cf3a73d566c64b
   }, [category]);
 
   return (
