@@ -12,7 +12,7 @@ const Foods = () => {
   const foodList = foods;
   const dispatch = useDispatch();
 
-  const categoryHanle = (e) => {
+  const categoryHandle = (e) => {
     const { value } = e.target;
     setCategory(value);
   };
@@ -28,7 +28,7 @@ const Foods = () => {
 
   return (
     <div>
-      <select className="categroes" onChange={(e) => { categoryHanle(e); }}>
+      <select className="categroes" onChange={(e) => { categoryHandle(e); }}>
         {categoryList.map((item) => (
           <option value={item.strCategory} key={item.strCategory}>{item.strCategory}</option>
         ))}
