@@ -34,8 +34,8 @@ const Foods = () => {
         ))}
       </select>
       <div className="card-grid">
-        {foodList.map((item) => (
-          <FoodItem key={item} food={item} />
+        {foodList.map((obj) => (
+          <FoodItem key={obj} food={obj} />
         ))}
       </div>
     </div>
