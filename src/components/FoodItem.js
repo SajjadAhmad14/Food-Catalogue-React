@@ -47,7 +47,6 @@ const FoodItem = ({ food }) => {
   const handleExpandClick = () => {
     setExpanded(!expanded);
   };
-
   return (
     <Card className={classes.root}>
       <CardHeader
@@ -99,6 +98,10 @@ const FoodItem = ({ food }) => {
 
 export default FoodItem;
 
+FoodItem.defaultProps = {
+  food: {},
+};
+
 FoodItem.propTypes = {
-  food: PropTypes.objectOf.isRequired,
+  food: PropTypes.shape({}),
 };
