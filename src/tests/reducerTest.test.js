@@ -19,4 +19,4 @@ describe('Food reducer', () => {
   it('should return categories', () => {
     expect(foodReducer(['a', 'b', 'c'], 'FETCH_FOODS')).toEqual(['a', 'b', 'c']);
   });
-});
+})
