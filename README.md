@@ -22,6 +22,10 @@
 
 <a href = 'https://foodcraz.netlify.app/' target = 'blank'>Go Live</a>
 
+## Project Presentation
+
+<a href = 'https://www.loom.com/share/c477d48e0a1f49f281192af2b9880f1b' target = 'blank'>Watch</a>
+
 ## Set Up Project Locally
 
 **To get this project set up on your local machine, follow these simple steps:**
@@ -73,4 +77,4 @@ Give a ⭐️ if you like this project!
 
 ## 📝 License
 
-This project is [MIT](./MIT.md) licensed..
+This project is MIT licensed.
