@@ -11,7 +11,7 @@ jest.mock('../components/SignUp');
 jest.mock('../App');
 
 describe('Tests for App Router', () => {
-  test('Should render App on default route', () => {
+  it('Should render App on default route', () => {
     App.mockImplementation(() => <div>AppMock</div>);
     render(
       <MemoryRouter>
@@ -21,7 +21,7 @@ describe('Tests for App Router', () => {
     expect(screen.getByText('AppMock')).toBeInTheDocument();
   });
 
-  test('Render SignIn page for signin route', () => {
+  it('Render SignIn page for signin route', () => {
     SignIn.mockImplementation(() => <div>SignInMock</div>);
     render(
       <MemoryRouter initialEntries={['/signin']}>
@@ -31,7 +31,7 @@ describe('Tests for App Router', () => {
     expect(screen.getByText('SignInMock')).toBeInTheDocument();
   });
 
-  test('Render SignUp page for signup route', () => {
+  it('Render SignUp page for signup route', () => {
     SignUp.mockImplementation(() => <div>SignUpMock</div>);
     render(
       <MemoryRouter initialEntries={['/signup']}>
