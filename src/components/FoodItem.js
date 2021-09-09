@@ -49,12 +49,13 @@ const FoodItem = ({ food }) => {
     setExpanded(!expanded);
   };
   return (
-    <Link to={{
-      pathname: '/DetailPage/{item.strMeal}',
-      state: { food: item },
-    }}
+    <Link
+      to={{
+        pathname: '/DetailPage/{item.strMeal}',
+        state: { food: item },
+      }}
+      style={{ textDecoration: 'none' }}
     >
-      Register
       <Card className={classes.root}>
         <CardHeader
           avatar={(

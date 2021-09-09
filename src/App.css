@@ -10,6 +10,10 @@
   font-weight: 400;
 }
 
+body {
+  background-color: silver;
+}
+
 .navigation {
   display: flex;
   justify-content: space-between;
@@ -90,10 +94,17 @@
 .card-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  row-gap: 5px;
 }
 
 .details {
   color: #fff;
-  border: 2px solid red;
   background-color: black;
+  height: 100vh;
+}
+
+.details-card {
+  margin-top: 50px;
+  display: flex;
+  justify-Content: center;
 }
