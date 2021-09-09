@@ -91,3 +91,9 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 }
+
+.details {
+  color: #fff;
+  border: 2px solid red;
+  background-color: black;
+}

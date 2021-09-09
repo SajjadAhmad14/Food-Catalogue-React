@@ -10,6 +10,7 @@ import { faMobile } from '@fortawesome/free-solid-svg-icons';
 import SignIn from './SignIn';
 import SignUp from './SignUp';
 import App from '../App';
+import DetailPage from './DetailPage';
 
 const Routes = () => (
   <Router>
@@ -31,6 +32,7 @@ const Routes = () => (
       <Route exact path="/" component={App} />
       <Route exact path="/signin" component={SignIn} />
       <Route exact path="/signup" component={SignUp} />
+      <Route exact path="/DetailPage/:name" component={DetailPage} />
     </Switch>
   </Router>
 );
