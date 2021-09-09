@@ -74,6 +74,7 @@ const FoodItem = ({ food }) => {
         <CardMedia
           className={classes.media}
           image={item.strMealThumb}
+          src={item.strMealThumb}
           title="Paella dish"
         />
         <CardContent>
@@ -142,4 +143,5 @@ FoodItem.defaultProps = {
 
 FoodItem.propTypes = {
   food: PropTypes.shape({}),
+  // image: PropTypes.string.isRequired,
 };
