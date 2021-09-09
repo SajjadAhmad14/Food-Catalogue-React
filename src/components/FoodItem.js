@@ -143,5 +143,4 @@ FoodItem.defaultProps = {
 
 FoodItem.propTypes = {
   food: PropTypes.shape({}),
-  // image: PropTypes.string.isRequired,
 };
