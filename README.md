@@ -1,70 +1,80 @@
-# Getting Started with Create React App
+# Foodie
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+> This is a Food search app built using React+Redux and [this](https://www.themealdb.com/api.php) API.
+ 
+ # About Project
 
-## Available Scripts
+  This app is a food search app. User can search for food by selecting a food category.
 
-In the project directory, you can run:
+## Requirements
 
-### `yarn start`
+[Node.js](https://nodejs.org) is required to install dependencies and run scripts via `npm`.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Available Commands
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+| Command | Description |
+|---------|-------------|
+| `npm install` | Install project dependencies |
+| `npm start` | Build project and open web server running project |
+| `npm run build` | Builds code bundle with production settings (minification, uglification, etc..) |
 
-### `yarn test`
+## Live Demo
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<a href = 'https://foodcraz.netlify.app/' target = 'blank'>Go Live</a>
 
-### `yarn build`
+## Project Presentation
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<a href = 'https://www.loom.com/share/c477d48e0a1f49f281192af2b9880f1b' target = 'blank'>Watch</a>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Set Up Project Locally
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+**To get this project set up on your local machine, follow these simple steps:**
 
-### `yarn eject`
+**Step 1**<br>
+Navigate through the local folder where you want to clone the repository and run<br>
+`git@github.com:SajjadAhmad14/Foodie-React.git` to clone the repo to your local folder.<br>
+or with https<br>
+`https://github.com/SajjadAhmad14/Foodie-React.git`.<br>
+**Step 2**<br>
+Run `cd Foodie-React`<br>
+**Step 3**<br>
+Run `npm install`<br>
+**Step 4**<br>
+Run `npm start`<br>
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Tests
+Run `npm test`<br>
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Built With
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+- React
+- Redux
+- JavaScript
+- HTML
+- CSS
+- VScode
+- Git
+- GitHub
+- Netlify
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Authors
 
-## Learn More
+👤 **Sajjad Ahmad**
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- GitHub: [@githubhandle](https://github.com/SajjadAhmad14)
+- Twitter: [@twitterhandle](https://twitter.com/Sajjad_Ahmad14)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/sajjadahmad14)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 🤝 Contributing
 
-### Code Splitting
+Contributions, issues, and feature requests are welcome!
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Please Open a pull request if you want to add a feature or see any bug!
 
-### Analyzing the Bundle Size
+## Show your support
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Give a ⭐️ if you like this project!
 
-### Making a Progressive Web App
+## 📝 License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is MIT licensed.
